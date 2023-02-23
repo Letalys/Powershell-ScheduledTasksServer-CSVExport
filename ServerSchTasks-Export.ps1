@@ -3,7 +3,7 @@ Clear-Host
 
 Write-Host -NoNewLine -Foregroundcolor Yellow "Retrieving Server informations (Wait) : "
 
-$ServerList = Get-ADComputer -Filter {(OperatingSystem -like "*server*") -and (Name -eq "vs-fs1")}
+$ServerList = Get-ADComputer -Filter {(OperatingSystem -like "*server*")}
 
 [System.Collections.Arraylist]$ServerTaskList =@()
 Foreach($Server in $ServerList){
