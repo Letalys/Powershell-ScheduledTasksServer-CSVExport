@@ -1,3 +1,17 @@
+<#
+.SYNOPSIS
+  This script can be use for export All information of ScheduledTask from Windows Server in Active Directory
+.DESCRIPTION
+  Using ActiveDirectory Module (Installed With RSAT)
+.OUTPUTS
+  .\Export-ServerScheduleTaskInfoList.csv
+.NOTES
+  Version:        1.0
+  Author:         Letalys
+  Creation Date:  23/02/2023
+  Purpose/Change: Initial script development
+#>
+
 $StartTime = $(get-date)
 Clear-Host
 
